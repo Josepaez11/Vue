@@ -26,7 +26,7 @@ var app = new Vue({
       },
       computed: {
          mostrarTituloOperacion() {
-           return this.operacion === 0 || this.num === 0 ?  "NEUTRO" : this.operacion === 1 ? " AGREGANDO" : " RESTANDO "
+           return this.operacion === 0 || this.num === 0 ?  "OPERACION" : this.operacion === 1 ? " AGREGANDO" : " RESTANDO "
         },
         classObject() {
           return this.operacion === 0 || this.num === 0 ?  "alert alert-primary" : this.operacion === 1 ? "alert alert-success" : "alert alert-danger"
